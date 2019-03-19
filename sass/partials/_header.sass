@@ -1,0 +1,107 @@
+.container-fuid
+	display: flex
+	justify-content: space-between
+
+.nav-btn
+	width: 50px
+	height: 48px
+	background-color: $red
+	float: right
+	border: none
+	position: relative
+	display: none
+	+md
+		display: block
+
+.nav-btn i
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 18px
+	height: 2px
+	background: #fff
+	margin: -1px 0 0 -9px
+
+.nav-btn i::before,
+.nav-btn i::after
+	content: ""
+	width: 18px
+	height: 2px
+	background: #fff
+	position: absolute
+	left: 0
+
+.nav-btn i::before
+	top: -6px
+
+.nav-btn i::after
+	top: 6px
+
+.nav-btn.is-active i
+	background: transparent
+
+.nav-btn.is-active i::before
+	top: 0
+	transform: rotate(45deg)
+
+.nav-btn.is-active i::after
+	top: 0
+	transform: rotate(-45deg)
+
+.main-nav
+	position: relative
+
+.main-nav ul
+	position: absolute
+	top: 51px
+	right: 58px
+	list-style: none
+	width: 120px
+	margin: 0
+	display: none
+
+
+.regular-nav li
+	display: none
+	+md740
+		display: inline
+		font-size: 17px
+		margin-right: 26px
+
+
+.main-nav li 
+	padding: 0
+	margin: 0
+	background: $red
+	+mdmin
+		display: none
+
+li a:hover
+	color: $yellow
+
+.main-nav a
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 400
+	color: #fff
+	display: block
+	padding: 10px 5px
+	border-bottom: 1px solid #fff
+
+.header__logo
+	font-size: 25px
+
+.logo-box
+	margin-left: 28px
+	+md
+		margin-left: 0
+
+.top-block
+	background: url(../images/main-pic.jpg) 50% no-repeat
+	width: 100%
+	height: 494px
+
+
+
+

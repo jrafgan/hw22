@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro')
+body
+	color: $color-txt
+	background: $bg-page
+	font-size: 16px
+	font-family: 'Fjallah One', sans-serif
+	line-height: 1.3
+	min-width: 303px
+	+sm
+		margin: 0
+		padding: 0
+
+.container
+	min-width: 303px
+	max-width: 1200px
+	padding: 0 15px
+	margin: 0 auto
+	text-align: center
+	+sm
+		margin: 0
+		padding: 0
+
+a
+	text-decoration: none
+	color: inherit
+
+.promo-text
+	margin: 150px auto 10px
+	text-transform: uppercase
+
+.promo-p__main--mod
+	font-size: 41px
+	margin-bottom: 12px
+	+md622
+		font-size: 21px
+
+
+.promo-span__main--mod
+	font-size: 31px
+	+md622
+		font-size: 16px
+
+.promo-p__main
+	font-size: 29px
+	text-transform: uppercase
+	margin-bottom: 4px
+	+md622
+		font-size: 21px
+
+.promo-span__main
+	font-size: 16px
+	font-family: $ff-add
+	display: inline-block
+	width: 75%
+	margin-bottom: 53px
+
+.color-box__image
+	width: 99px
+	height: 99px
+	display: block
+	margin: 54px auto 25px
+	border-radius: 50%
+	background: $color-txt
+
+.color-box__image--1
+	background: url(../images/ic-dialog.png) 0 0 no-repeat
+
+.color-box__image--2
+	background: url(../images/ic-pencil.png) 0 0 no-repeat
+
+.color-box__image--3
+	background: url(../images/ic-crown.png) 0 0 no-repeat
+
+.color-box__image--4
+	background: url(../images/ic-user.png) 0 0 no-repeat
+
+.color__box--1,
+.color__line--1
+	background: $red
+
+.color__box--2,
+.color__line--2
+	background: $yellow
+
+.color__box--3,
+.color__line--3
+	background: $sea-green
+
+.color__box--4
+	background: $purple
+
+.color-line
+	display: inline-block
+	height: 7px
+	width: 100%
+
+.color-box__photo
+	width: 200px
+	height: 200px
+	display: block
+
+.tempor-box
+	background: $bg-dark
+	padding-right: 0
+	padding-left: 0
+	margin-top: 43px
+	width: 31%
+	+lg900
+		width: 47%
+	+md622
+		width: 97%
+
+.no-gutters
+	justify-content: space-around
+	margin-top: 76px
+
+.regular-span
+	font-size: 21px
+	text-transform: uppercase
+	position: relative
+	+md622
+		font-size: 16px
+
+.tempor-p__main
+	font-size: 29px
+	text-transform: uppercase
+	margin-bottom: 8px
+	+md622
+		font-size: 21px
+
+.tempor-span__main
+	font-size: 16px
+	font-family: $ff-add
+	display: inline-block
+	padding-left: 15px
+	padding-right: 15px
+
+.color-box__photo
+	width: 200px
+	height: 200px
+	display: block
+	margin: 26px auto 28px
+
+.color-box__photo--1
+	background: url(../images/first-pic.png) 0 0 no-repeat
+
+.color-box__photo--2
+	background: url(../images/second-pic.png) 0 0 no-repeat
+
+.color-box__photo--3
+	background: url(../images/third-pic.png) 0 0 no-repeat
+
+.text-block__main--tempor
+	margin-bottom: 50px
+
+.connect__image
+	background: url(../images/ic-mail.png) 0 0 no-repeat
+	margin-top: 85px
+
+.connect-p__main
+	font-size: 29px
+	text-transform: uppercase
+	margin-bottom: 12px
+	+md622
+		font-size: 21px
+
+.connect-span__main
+	font-size: 21px
+	text-transform: uppercase
+	position: relative
+	+md622
+		font-size: 16px
+
+.connect-name,
+.connect-email
+	background: $bg-dark
+	border-color: $border
+	width: 270px
+	height: 46px
+	border: none
+	border: 1px solid $border
+
+.connect-email
+	margin-right: 30px
+	+md622
+		margin-right: 0
+		margin-bottom: 20px
+
+::placeholder
+	color: $sea-green
+
+.form-connect
+	margin-top: 34px
+
+
+.input,
+.connect-message
+	padding-left: 12px
+	color: $color-txt
+
+.dark__span-line1,
+.dark__span-line2
+	border-bottom: 1px solid $border
+	width: 80px
+	position: absolute
+	bottom: 8px
+	+md
+		display: none
+
+.dark__span-line1
+	left: 365px
+
+.dark__span-line2
+	right: 365px
+
+.tempor__span-line1,
+.tempor__span-line2
+	border-bottom: 1px solid $border
+	width: 125px
+	position: absolute
+	bottom: 25px
+	+md
+		display: none
+
+.tempor__span-line1
+	left: 290px
+
+.tempor__span-line2
+	right: 290px
+
+.connect-message
+	background: $bg-dark
+	width: 570px
+	height: 126px
+	border: none
+	border: 1px solid $border
+	resize: none
+	display: block
+	margin: 30px auto
+	padding-top: 12px
+	padding-left: 12px
+	+md
+		width: 95%
+
+.sub__footer-p
+	font-family: $ff-add
+	font-size: 15px
+	padding-top: 13px
+
+.sub__footer-span--image
+	display: inline-block
+	width: 36px
+	height: 36px
+
+.sub__footer-span--image1
+	background: url(../images/ic-fb.png) 0 0 no-repeat
+
+.sub__footer-span--image2
+	background: url(../images/ic-twt.png) 0 0 no-repeat
+
+.row-f
+	justify-content: center
+
+.sub__footer--2
+	margin: 5px 20px
+	+md
+		width: 80%
+
+.sub__footer
+	padding-top: 36px
+
+.sub-footer
+	margin-top: 80px
+	background: $bg-dark
+
+.footer-p
+	font-size: 16px
+	font-family: $ff-add
+	padding-bottom: 21px
+
+.footer-span
+	color: $yellow
+
+.footer
+	background: $bg-dark
+
+.footer__dark-line
+	border-bottom: 1px solid $border
+	width: 283px
+	display: block
+	margin: 0 auto 33px
+	padding-top: 20px
+
+
+

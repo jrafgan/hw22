@@ -1,0 +1,26 @@
+=btn($color)
+	background: $color
+	&::before
+		border-color: $color transparent transparent transparent
+
+=lg900
+	@media screen and (max-width: 900px)
+		@content
+
+
+
+=md
+	@media screen and (max-width: 741px)
+		@content
+=md740
+	@media screen and (min-width: 742px)
+		@content
+=mdmin
+	@media screen and (min-width: 741px)
+		@content
+=md622
+	@media screen and (max-width: 622px)
+		@content
+=sm
+	@media screen and (max-width: 320px)
+		@content

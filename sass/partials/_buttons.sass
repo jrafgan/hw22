@@ -1,0 +1,106 @@
+%btns
+	color: $color-txt
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 15px
+	padding: 9px 6px
+	position: relative
+	display: inline-block
+	&::before
+		content: ""
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 10px 11px 0 11px
+		position: absolute
+		bottom: -10px
+		left: 50%
+		margin-left: -11px
+
+.btn-red
+	@extend %btns
+	+btn($red)
+.btn-yellow
+	@extend %btns
+	+btn($yellow)
+.btn-green
+	@extend %btns
+	+btn($sea-green)
+.btn-dark
+	@extend %btns
+	+btn($bg-dark)
+	border: 1px solid $border
+	background: $bg-dark
+	border-bottom: none
+	padding: 8px 22px
+	&::before
+		display: none
+
+.btn-white
+	@extend %btns
+	border: 2px solid $color-txt
+	background: transparent
+	border-bottom: none
+	padding: 12px 20px
+	&::before
+		display: none
+
+.btn-block
+	position: relative
+	box-sizing: border-box
+	width: 144px
+	height: 48px
+	margin: 20px auto
+
+.white-line1,
+.white-line2
+	border-bottom: 2px solid $color-txt
+	width: 58px
+	position: absolute
+	bottom: 3px
+
+.white-line1
+	left: 5px
+
+.white-line2
+	left: 81px
+
+.white-triangle
+	position: absolute
+	width: 14px
+	height: 14px
+	border-bottom: 2px solid $color-txt
+	border-left: 2px solid $color-txt
+	bottom: -4px
+	left: 65px
+	transform: rotate(-45deg)
+
+.dark-triangle
+	position: absolute
+	width: 13px
+	height: 13px
+	border-bottom: 1px solid $border
+	border-left: 1px solid $border
+	bottom: 6px
+	left: 65px
+	transform: rotate(-45deg)
+
+.btn-u
+	margin-bottom: 60px
+
+.dark-line1,
+.dark-line2
+	border-bottom: 1px solid $border
+	width: 43px
+	position: absolute
+	bottom: 12px
+
+.dark-line1
+	left: 20px
+
+.dark-line2
+	left: 80px
+
+
+
+
